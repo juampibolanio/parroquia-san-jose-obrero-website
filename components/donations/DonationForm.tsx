@@ -120,8 +120,8 @@ export default function DonationForm() {
       </div>
 
       <div className="mt-space-lg pt-space-md border-t border-outline-variant/20 text-center animate-[fadeIn_1s_ease-in]">
-        <p className="font-[family-name:var(--font-headline)] text-[16px] md:text-[18px] italic text-primary-fixed-dim hover:text-primary transition-colors duration-300 cursor-default">
-          «Sabemos que acompañar también es estar presentes. Que San José Obrero bendiga tu generosidad y el trabajo de tus manos.»
+        <p className="font-[family-name:var(--font-headline)] text-[16px] md:text-[18px] italic  transition-colors duration-300 cursor-default">
+          Sabemos que acompañar también es estar presente con nuestras oraciones, por eso, además de la colaboración económica, contamos con la oración de todos los que forman parte de nuestra comunidad. ¡Gracias por sumarte a esta obra!
         </p>
       </div>
 
