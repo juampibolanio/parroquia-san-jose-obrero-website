@@ -25,7 +25,7 @@ export default function DonationForm() {
           Paso 1 de 2
         </span>
         <h3 className="font-[family-name:var(--font-headline)] text-[22px] text-on-surface mt-1">
-          Elegí cómo sumarte al proyecto
+          Elegí cómo sumarte
         </h3>
       </div>
 
@@ -42,7 +42,7 @@ export default function DonationForm() {
             <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-primary animate-[zoomIn_0.3s_ease-out]" />
           )}
           <Users className={`w-8 h-8 md:w-10 md:h-10 mb-space-xs transition-transform duration-300 ${isMonthly ? 'scale-110' : 'group-hover:scale-110'}`} />
-          <span className="font-[family-name:var(--font-headline)] text-[18px] md:text-[20px] font-bold">Ser Padrino</span>
+          <span className="font-[family-name:var(--font-headline)] text-[18px] md:text-[20px] font-bold">Suscripción mensual</span>
           <span className="font-[family-name:var(--font-body)] text-[12px] md:text-[13px] mt-1 opacity-90">Aporte mensual para sostener la obra</span>
         </button>
 
@@ -58,15 +58,15 @@ export default function DonationForm() {
             <CheckCircle2 className="absolute top-3 right-3 w-5 h-5 text-primary animate-[zoomIn_0.3s_ease-out]" />
           )}
           <Heart className={`w-8 h-8 md:w-10 md:h-10 mb-space-xs transition-transform duration-300 ${!isMonthly ? 'scale-110' : 'group-hover:scale-110'}`} />
-          <span className="font-[family-name:var(--font-headline)] text-[18px] md:text-[20px] font-bold">Bono Contribución</span>
-          <span className="font-[family-name:var(--font-body)] text-[12px] md:text-[13px] mt-1 opacity-90">Aporte único para iniciar los arreglos</span>
+          <span className="font-[family-name:var(--font-headline)] text-[18px] md:text-[20px] font-bold">Pago por única vez</span>
+          <span className="font-[family-name:var(--font-body)] text-[12px] md:text-[13px] mt-1 opacity-90">Aporte único a la obra</span>
         </button>
       </div>
 
       <div key={isMonthly ? 'monthly' : 'once'} className="animate-[slideUp_0.4s_ease-out_forwards]">
         <div className="mb-space-lg pb-space-lg border-b border-outline-variant/30">
           <label className="block font-[family-name:var(--font-body)] text-[14px] font-bold uppercase tracking-wider text-on-surface-variant mb-space-xs">
-            Seleccioná el importe de tu ofrenda:
+            Seleccioná el importe de tu colaboración {isMonthly ? '(mensual)' : '(único)'} *
           </label>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-space-sm mb-space-sm">
             {[5000, 10000, 20000, 50000].map((amount) => (
@@ -98,7 +98,7 @@ export default function DonationForm() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-md mb-space-lg">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-md mb-space-lg">
           <div className="group">
             <label className="block font-[family-name:var(--font-body)] text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Nombre y Apellido *</label>
             <input type="text" className="w-full px-space-md py-space-xs rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-[family-name:var(--font-body)] focus:outline-none focus:ring-2 focus:ring-primary-container transition-all cursor-text" placeholder="Ej: María Belén" />
@@ -108,25 +108,21 @@ export default function DonationForm() {
             <input type="email" className="w-full px-space-md py-space-xs rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-[family-name:var(--font-body)] focus:outline-none focus:ring-2 focus:ring-primary-container transition-all cursor-text" placeholder="correo@ejemplo.com" />
           </div>
           <div className="group">
-            <label className="block font-[family-name:var(--font-body)] text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">WhatsApp (Opcional)</label>
+            <label className="block font-[family-name:var(--font-body)] text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors">Número de Teléfono (Opcional)</label>
             <input type="tel" className="w-full px-space-md py-space-xs rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-[family-name:var(--font-body)] focus:outline-none focus:ring-2 focus:ring-primary-container transition-all cursor-text" placeholder="+54 9 11 ..." />
-          </div>
-          <div className="group">
-            <label className="block font-[family-name:var(--font-body)] text-[10px] uppercase font-bold tracking-wider text-on-surface-variant mb-1 group-focus-within:text-primary transition-colors flex items-center gap-1">Intención de Oración</label>
-            <input type="text" className="w-full px-space-md py-space-xs rounded-lg bg-surface-container-lowest border border-outline-variant/30 text-on-surface font-[family-name:var(--font-body)] focus:outline-none focus:ring-2 focus:ring-primary-container transition-all cursor-text" placeholder="Te acompañamos con nuestra oración..." />
           </div>
         </div>
 
         <button className="group w-full py-space-md rounded-xl bg-primary-container text-on-primary font-[family-name:var(--font-body)] text-[14px] font-bold uppercase tracking-widest shadow-md hover:bg-primary hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-space-xs hover:-translate-y-0.5 active:scale-[0.98] cursor-pointer">
           <CreditCard className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
-          {isMonthly ? 'Suscribirme como Padrino' : 'Adquirir Bono Contribución'}
+          {isMonthly ? 'Suscribirme & colaborar' : 'Colaborar con un pago único'}
         </button>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center justify-center gap-space-sm sm:gap-space-md mt-space-md text-outline">
-        <span className="font-[family-name:var(--font-body)] text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 opacity-80 hover:opacity-100 transition-opacity">
-          <Lock className="w-3 h-3" /> Cifrado SSL de 256 bits
-        </span>
+      <div className="mt-space-lg pt-space-md border-t border-outline-variant/20 text-center animate-[fadeIn_1s_ease-in]">
+        <p className="font-[family-name:var(--font-headline)] text-[16px] md:text-[18px] italic text-primary-fixed-dim hover:text-primary transition-colors duration-300 cursor-default">
+          «Sabemos que acompañar también es estar presentes. Que San José Obrero bendiga tu generosidad y el trabajo de tus manos.»
+        </p>
       </div>
 
       <style>{`
@@ -137,6 +133,10 @@ export default function DonationForm() {
         @keyframes slideUp {
           from { opacity: 0; transform: translateY(15px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
         }
       `}</style>
     </div>

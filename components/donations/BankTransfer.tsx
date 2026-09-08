@@ -18,16 +18,16 @@ export default function BankTransfer() {
       <div className="max-w-md flex flex-col gap-space-xs">
         <div className="inline-flex items-center gap-space-2xs text-primary font-[family-name:var(--font-body)] text-[12px] font-bold uppercase tracking-widest">
           <Landmark className="w-5 h-5" />
-          Canal Parroquial Directo
+          Transferencias
         </div>
         <h3 className="font-[family-name:var(--font-headline)] text-[22px] text-on-surface">
-          También podés colaborar mediante transferencia
+          También podés colaborar mediante transferencias directas.
         </h3>
         <p className="font-[family-name:var(--font-body)] text-[15px] text-on-surface-variant leading-relaxed">
-          Tu colaboración será acreditada en la cuenta oficial del Obispado de San Juan de la Vera Cruz - Parroquia San José Obrero, sin comisiones de intermediarios.
+          Toda colaboración es bienvenida y nos acerca a la meta de hacer realidad este proyecto tan importante para nuestra comunidad. Podés realizar tu aporte mediante transferencia bancaria a la cuenta parroquial.
         </p>
         
-        <div className="pt-space-sm">
+        {/*<div className="pt-space-sm">
           <a 
             href="https://wa.me/5491155550190" 
             target="_blank" 
@@ -37,14 +37,14 @@ export default function BankTransfer() {
             <MessageCircle className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
             Enviar comprobante por WhatsApp
           </a>
-        </div>
+        </div>*/}
       </div>
 
       <div className="w-full lg:w-auto flex-1 max-w-lg bg-surface-container-low border border-outline-variant/20 rounded-xl p-space-lg flex flex-col gap-space-sm">
         <div className="flex items-center justify-between pb-space-2xs border-b border-outline-variant/20">
           <div>
             <span className="font-[family-name:var(--font-body)] text-[10px] font-bold text-outline uppercase tracking-wider block mb-0.5">Titular de Cuenta</span>
-            <span className="font-[family-name:var(--font-body)] text-[14px] text-on-surface font-bold">Obispado / Pquia. San José Obrero</span>
+            <span className="font-[family-name:var(--font-body)] text-[14px] text-on-surface font-bold">Pquia. San José Obrero</span>
           </div>
         </div>
 
@@ -83,10 +83,10 @@ export default function BankTransfer() {
         <div className="grid grid-cols-2 gap-space-sm pt-space-2xs text-on-surface-variant">
           <div>
             <span className="font-[family-name:var(--font-body)] text-[10px] font-bold uppercase text-outline block mb-0.5">Banco</span>
-            <span className="font-[family-name:var(--font-body)] text-[12px] font-medium">Banco Santander Río</span>
+            <span className="font-[family-name:var(--font-body)] text-[12px] font-medium">Banco de la Nación Argentina</span>
           </div>
           <div>
-            <span className="font-[family-name:var(--font-body)] text-[10px] font-bold uppercase text-outline block mb-0.5">CUIT Parroquial</span>
+            <span className="font-[family-name:var(--font-body)] text-[10px] font-bold uppercase text-outline block mb-0.5">CUIT</span>
             <span className="font-[family-name:var(--font-body)] text-[12px] font-medium">30-65489012-7</span>
           </div>
         </div>

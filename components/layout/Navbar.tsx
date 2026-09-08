@@ -17,21 +17,15 @@ export default function Navbar() {
           </div>
         </Link>
 
-        <nav className="hidden xl:flex items-center gap-space-md">
-          <Link href="/" className="font-[family-name:var(--font-body)] text-[12px] font-bold uppercase text-primary-fixed hover:text-primary-fixed-dim transition-colors duration-200 cursor-pointer">Inicio</Link>
-          <Link href="/#horarios" className="font-[family-name:var(--font-body)] text-[12px] font-semibold uppercase text-inverse-on-surface hover:text-primary-fixed transition-colors duration-200 cursor-pointer">Horarios</Link>
-          <Link href="/#jovenes" className="font-[family-name:var(--font-body)] text-[12px] font-semibold uppercase text-inverse-on-surface hover:text-primary-fixed transition-colors duration-200 cursor-pointer">Jóvenes Unidos</Link>
-        </nav>
-
-        <div className="flex items-center gap-space-sm">
+        {/*<div className="flex items-center gap-space-sm">
           <Link 
-            href="/donar" 
+            href="#donar" 
             className="group flex items-center gap-2 px-space-md py-space-xs rounded bg-primary-container text-on-primary font-[family-name:var(--font-body)] text-[14px] font-bold uppercase tracking-widest shadow-sm hover:bg-primary hover:shadow-md transition-all duration-300 hover:-translate-y-0.5 cursor-pointer"
           >
             <Heart className="w-4 h-4 transition-transform duration-300 group-hover:scale-110" />
-            Donar
+            Quiero Colaborar
           </Link>
-        </div>
+        </div>*/}
       </div>
     </header>
   );

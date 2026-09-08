@@ -1,20 +1,54 @@
+import { Mail, MapPin } from 'lucide-react';
+
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#1B1A20] text-inverse-on-surface mt-space-3xl py-space-2xl border-t-4 border-primary-container">
-      <div className="max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop text-center md:text-left flex flex-col md:flex-row justify-between items-center gap-space-md">
+    <footer className="w-full bg-[#1B1A20] text-inverse-on-surface mt-space-3xl relative overflow-hidden">
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent opacity-70" />
+
+      <div className="max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop pt-space-2xl pb-space-xl">
         
-        <div className="group cursor-default">
-            <span className="font-[family-name:var(--font-headline)] text-[22px] font-medium text-primary-fixed transition-colors duration-300 group-hover:text-primary-fixed-dim">San José Obrero</span>
-            <p className="font-[family-name:var(--font-body)] text-[13px] text-outline-variant mt-2">
-            Av. San José 1950, Barrio Obrero<br/>
-            WhatsApp Despacho: +54 9 11 5555-0190
-            </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-space-2xl items-center border-b border-outline-variant/10 pb-space-2xl">
+          
+          <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
+            <div className="group cursor-default flex flex-col">
+              <span className="font-[family-name:var(--font-headline)] text-[28px] font-medium text-primary-fixed transition-colors duration-300 group-hover:text-primary-fixed-dim">
+                Parroquia San José Obrero
+              </span>
+            </div>
+            
+            <div className="flex flex-col gap-3 font-[family-name:var(--font-body)] text-[14px] text-outline-variant">
+              <div className="flex items-center gap-3 justify-center md:justify-start group">
+                <MapPin className="w-4 h-4 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <span>Molina & Echeverria - Resistencia, Chaco</span>
+              </div>
+              
+              <div className="flex items-center gap-3 justify-center md:justify-start group">
+                <Mail className="w-4 h-4 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <a 
+                  href="mailto:pquiasanjoseobrero56@gmail.com" 
+                  className="hover:text-primary-fixed-dim transition-colors duration-300"
+                >
+                  pquiasanjoseobrero56@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/*<div className="flex justify-center md:justify-end">
+            <div className="max-w-sm relative">
+              <span className="absolute -top-6 -left-6 text-[60px] text-primary/10 font-serif leading-none select-none">
+                &quot;
+              </span>
+              <p className="font-[family-name:var(--font-headline)] text-[20px] md:text-[22px] italic text-primary-fixed-dim text-center md:text-right leading-relaxed relative z-10 hover:text-primary-fixed transition-colors duration-300 cursor-default">
+                Custodio de las santas familias y consuelo de los trabajadores, ruega por nosotros.
+              </p>
+            </div>
+          </div>*/}
+
         </div>
 
-        <div className="text-center md:text-right">
-            <p className="font-[family-name:var(--font-headline)] text-[18px] italic text-primary-fixed-dim max-w-sm hover:text-primary-fixed transition-colors duration-300">
-                «Custodio de las santas familias y consuelo de los trabajadores, ruega por nosotros.»
-            </p>
+        <div className="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-4 font-[family-name:var(--font-body)] text-[12px] text-outline-variant/60">
+          <p>© {new Date().getFullYear()} Parroquia San José Obrero. Todos los derechos reservados.</p>
         </div>
 
       </div>
