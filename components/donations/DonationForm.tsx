@@ -115,7 +115,7 @@ export default function DonationForm() {
 
         <button className="group w-full py-space-md rounded-xl bg-primary-container text-on-primary font-[family-name:var(--font-body)] text-[14px] font-bold uppercase tracking-widest shadow-md hover:bg-primary hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-space-xs hover:-translate-y-0.5 active:scale-[0.98] cursor-pointer">
           <CreditCard className="w-5 h-5 transition-transform duration-300 group-hover:scale-110" />
-          {isMonthly ? 'Suscribirme & colaborar' : 'Colaborar con un pago único'}
+          {isMonthly ? 'Suscribirme & colaborar' : 'Colaborar'}
         </button>
       </div>
 
