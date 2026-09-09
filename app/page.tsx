@@ -9,7 +9,7 @@ export default function HomePage() {
       <section id="donar" className="w-full py-space-2xl md:py-space-3xl max-w-[1140px] mx-auto px-margin-mobile lg:px-margin-desktop scroll-mt-20">
         <div className="text-center max-w-2xl mx-auto mb-space-2xl">
           <span className="font-[family-name:var(--font-body)] text-[14px] font-bold uppercase tracking-widest text-primary">
-            Campaña Casa Sacerdotal
+            Campaña Casa & Vehículo Sacerdotal
           </span>
           <h2 className="font-[family-name:var(--font-headline)] text-[32px] md:text-[40px] text-on-surface mt-space-2xs leading-tight">
             Entre todos, podemos hacerlo posible
