@@ -3,7 +3,7 @@ import { Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#1B1A20] text-inverse-on-surface mt-space-3xl relative overflow-hidden">
+    <footer className="w-full bg-[#3c2804] text-inverse-on-surface mt-space-3xl relative overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-primary-container to-transparent opacity-70" />
 
       <div className="max-w-285 mx-auto px-margin-mobile lg:px-margin-desktop pt-space-2xl pb-space-xl">
@@ -12,7 +12,7 @@ export default function Footer() {
           
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
             <div className="group cursor-default flex items-center gap-space-md">
-              <div className="relative w-20 h-20 transition-transform duration-300 group-hover:scale-105">
+              <div className="relative w-30 h-30 transition-transform duration-300 group-hover:scale-105">
                 <Image 
                   src="/logo-w-text.webp" 
                   alt="Logo Parroquia San José Obrero" 
