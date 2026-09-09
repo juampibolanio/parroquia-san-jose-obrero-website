@@ -17,8 +17,28 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Parroquia San José Obrero",
-  description: "Una comunidad que construye con fe. Ayudanos a mantener nuestra casa común.",
+  metadataBase: new URL('https://www.parroquiasanjoseobrero.site'),
+  title: {
+    default: "Parroquia San José Obrero | Resistencia, Chaco",
+    template: "%s | San José Obrero"
+  },
+  description: "Parroquia en Resistencia, Chaco. ¡Bienvenidos a nuestra comunidad parroquial!",
+  keywords: ["Parroquia", "San José Obrero", "Resistencia", "Chaco", "Donaciones", "Iglesia Católica", "Horarios de Misa", "Bono Contribución", "Iglesia", "Comunidad"],
+  authors: [{ name: "Parroquia San José Obrero" }],
+  creator: "Parroquia San José Obrero",
+  openGraph: {
+    type: "website",
+    locale: "es_AR",
+    url: "https://www.parroquiasanjoseobrero.site",
+    title: "Parroquia San José Obrero - Resistencia",
+    description: "Parroquia en Resistencia, Chaco. ¡Bienvenidos a nuestra comunidad parroquial! ",
+    siteName: "Parroquia San José Obrero",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Parroquia San José Obrero - Resistencia",
+    description: "Parroquia en Resistencia, Chaco. ¡Bienvenidos a nuestra comunidad parroquial! ",
+  },
 };
 
 export default function RootLayout({
