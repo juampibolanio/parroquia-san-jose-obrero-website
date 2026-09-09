@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Landmark, Copy, Check, MessageCircle } from 'lucide-react';
+import { Landmark, Copy, Check } from 'lucide-react';
 
 export default function BankTransfer() {
   const [copiedField, setCopiedField] = useState<string | null>(null);

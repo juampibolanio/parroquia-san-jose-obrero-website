@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { Heart, CreditCard, Lock, Users, CheckCircle2 } from 'lucide-react';
+import { Heart, CreditCard, Users, CheckCircle2 } from 'lucide-react';
 
 export default function DonationForm() {
   const [isMonthly, setIsMonthly] = useState(true);

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import { Heart } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -8,10 +7,10 @@ export default function Navbar() {
         
         <Link href="/" className="flex items-center gap-space-sm group cursor-pointer">
           <div className="flex flex-col transition-transform duration-300 group-hover:scale-105">
-            <span className="font-[family-name:var(--font-headline)] text-[18px] font-semibold text-primary-fixed uppercase transition-colors duration-300 group-hover:text-primary-fixed-dim">
+            <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold text-on-primary uppercase tracking-widest opacity-90 group-hover:opacity-100 transition-opacity">
               Parroquia
             </span>
-            <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold text-on-primary uppercase tracking-widest opacity-90 group-hover:opacity-100 transition-opacity">
+            <span className="font-[family-name:var(--font-headline)] text-[18px] font-semibold text-primary-fixed uppercase transition-colors duration-300 group-hover:text-primary-fixed-dim">
               San José Obrero
             </span>
           </div>

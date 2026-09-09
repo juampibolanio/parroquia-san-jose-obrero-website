@@ -1,4 +1,3 @@
-import BankTransfer from '@/components/donations/BankTransfer';
 import DonationForm from '@/components/donations/DonationForm';
 import HeroSection from '@/components/home/HeroSection';
 
