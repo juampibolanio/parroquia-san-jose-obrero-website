@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Mail, MapPin } from 'lucide-react';
 
 export default function Footer() {
@@ -9,11 +10,24 @@ export default function Footer() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-space-2xl items-center border-b border-outline-variant/10 pb-space-2xl">
           
-          <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
-            <div className="group cursor-default flex flex-col">
-              <span className="font-[family-name:var(--font-headline)] text-[28px] font-medium text-primary-fixed transition-colors duration-300 group-hover:text-primary-fixed-dim">
-                Parroquia San José Obrero
-              </span>
+          <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+            <div className="group cursor-default flex items-center gap-space-md">
+              <div className="relative w-20 h-20 transition-transform duration-300 group-hover:scale-105">
+                <Image 
+                  src="/logo-w-text.webp" 
+                  alt="Logo Parroquia San José Obrero" 
+                  fill 
+                  className="object-contain"
+                />
+              </div>
+              <div className="flex flex-col text-left">
+                <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold text-on-primary uppercase tracking-widest opacity-90 transition-opacity">
+                  Parroquia
+                </span>
+                <span className="font-[family-name:var(--font-headline)] text-[22px] md:text-[28px] font-medium text-primary-fixed transition-colors duration-300 group-hover:text-primary-fixed-dim">
+                  San José Obrero
+                </span>
+              </div>
             </div>
             
             <div className="flex flex-col gap-3 font-[family-name:var(--font-body)] text-[14px] text-outline-variant">
@@ -26,25 +40,13 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-primary group-hover:scale-110 transition-transform duration-300" />
                 <a 
                   href="mailto:pquiasanjoseobrero56@gmail.com" 
-                  className="hover:text-primary-fixed-dim transition-colors duration-300"
+                  className="hover:text-primary-fixed-dim transition-colors duration-300 cursor-pointer"
                 >
                   pquiasanjoseobrero56@gmail.com
                 </a>
               </div>
             </div>
           </div>
-
-          {/*<div className="flex justify-center md:justify-end">
-            <div className="max-w-sm relative">
-              <span className="absolute -top-6 -left-6 text-[60px] text-primary/10 font-serif leading-none select-none">
-                &quot;
-              </span>
-              <p className="font-[family-name:var(--font-headline)] text-[20px] md:text-[22px] italic text-primary-fixed-dim text-center md:text-right leading-relaxed relative z-10 hover:text-primary-fixed transition-colors duration-300 cursor-default">
-                Custodio de las santas familias y consuelo de los trabajadores, ruega por nosotros.
-              </p>
-            </div>
-          </div>*/}
-
         </div>
 
         <div className="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-4 font-[family-name:var(--font-body)] text-[12px] text-outline-variant/60">
