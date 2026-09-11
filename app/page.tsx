@@ -1,6 +1,6 @@
-import BankTransfer from '@/components/donations/BankTransfer';
-import DonationForm from '@/components/donations/DonationForm';
 import HeroSection from '@/components/home/HeroSection';
+import DonationForm from '@/components/donations/DonationForm';
+import BankTransfer from '@/components/donations/BankTransfer';
 
 export default function HomePage() {
   return (
@@ -10,7 +10,7 @@ export default function HomePage() {
       <section id="donar" className="w-full py-space-2xl md:py-space-3xl max-w-285 mx-auto px-margin-mobile lg:px-margin-desktop scroll-mt-20">
         <div className="text-center max-w-2xl mx-auto mb-space-2xl">
           <span className="font-(family-name:--font-body) text-[14px] font-bold uppercase tracking-widest text-primary">
-            Campaña Casa Sacerdotal
+            Campaña Casa & Vehículo Sacerdotal
           </span>
           <h2 className="font-headline text-[32px] md:text-[40px] text-on-surface mt-space-2xs leading-tight">
             Entre todos, podemos hacerlo posible
@@ -32,7 +32,6 @@ export default function HomePage() {
         </div>
 
         <BankTransfer />
-
       </section>
 
       <style>{`

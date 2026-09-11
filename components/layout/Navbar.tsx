@@ -7,15 +7,17 @@ export default function Navbar() {
       <div className="h-25 max-w-285 mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between gap-gutter-sm">
         
         <Link href="/" className="flex items-center gap-space-md group cursor-pointer">
-          <div className="relative w-20 h-20 transition-transform duration-300 group-hover:scale-105">
+          <div className="relative w-20 h-20">
             <Image 
               src="/logo-no-text.webp" 
               alt="Logo Parroquia San José Obrero" 
+              sizes="100px"
               fill 
               className="object-contain"
+              loading="eager"
             />
           </div>
-          <div className="flex flex-col transition-transform duration-300 group-hover:scale-105">
+          <div className="flex flex-col">
             <span className="font-(family-name:--font-body)  text-[12px] font-semibold text-on-primary uppercase tracking-widest opacity-90 group-hover:opacity-100 transition-opacity">
               Parroquia
             </span>

@@ -12,12 +12,13 @@ export default function Footer() {
           
           <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-6">
             <div className="group cursor-default flex items-center gap-space-md">
-              <div className="relative w-30 h-30 transition-transform duration-300 group-hover:scale-105">
+              <div className="relative w-30 h-30">
                 <Image 
                   src="/logo-w-text.webp" 
                   alt="Logo Parroquia San José Obrero" 
                   fill 
                   className="object-contain"
+                  sizes='100px'
                 />
               </div>
               <div className="flex flex-col text-left">
@@ -32,12 +33,12 @@ export default function Footer() {
             
             <div className="flex flex-col gap-3 font-(family-name:--font-body) text-[14px] text-outline-variant">
               <div className="flex items-center gap-3 justify-center md:justify-start group">
-                <MapPin className="w-4 h-4 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <MapPin className="w-4 h-4 text-primary-fixed group-hover:scale-110 transition-transform duration-300" />
                 <span>Molina & Echeverria - Resistencia, Chaco</span>
               </div>
               
               <div className="flex items-center gap-3 justify-center md:justify-start group">
-                <Mail className="w-4 h-4 text-primary group-hover:scale-110 transition-transform duration-300" />
+                <Mail className="w-4 h-4 text-primary-fixed group-hover:scale-110 transition-transform duration-300" />
                 <a 
                   href="mailto:pquiasanjoseobrero56@gmail.com" 
                   className="hover:text-primary-fixed-dim transition-colors duration-300 cursor-pointer"
